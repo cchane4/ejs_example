@@ -1,0 +1,23 @@
+{
+  "name": "ejs_example",
+  "version": "1.0.0",
+  "description": "using templates and ejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchane4/ejs_example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cchane4/ejs_example/issues"
+  },
+  "homepage": "https://github.com/cchane4/ejs_example#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.3"
+  }
+}
