@@ -2,16 +2,17 @@ let express = require('express');
 let app = express(); 
 
 app.use(express.static('public')); 
+app.set("view engine", "ejs"); 
 
 app.get("/", (req, res) => { 
-    res.render("home.ejs"); 
+    res.render("home"); 
 }); 
 
 app.get("/fallinlovewiththing/:thing", (req,res) => { 
 let thing = req.params.thing;
 /*you have to define the variable you want to pass via embedded javascript
 in the res.render line */ 
-res.render('love.ejs', {thingvariable: thing}); 
+res.render('love', {thingvariable: thing}); 
 }); 
 
 app.get("/posts", (req,res) => { 
@@ -22,7 +23,7 @@ app.get("/posts", (req,res) => {
     ]; 
     /* res.render posts_a is what we will call it inside the template
     posts is the array of objects we will loop through */
-    res.render("posts.ejs", {posts_a: post_chain})
+    res.render("posts", {posts_a: post_chain})
 }); 
 
 app.listen(3000, () => { 
