@@ -1,0 +1,10 @@
+<h1> The posts page</h1>
+<!-- you can use a for loop 
+<% for(let i = 0; i < posts_a.length; i++){ %>
+<li> <%= posts_a[i].title %> - <strong><%= posts_a[i].author %></strong>  </li> 
+<% } %> -->
+
+<!-- but more common is to use a for Each loop-->
+<% posts_a.forEach((posts_a) => { %>
+ <li> <%= posts_a.title %> - <strong><%= posts_a.author %></strong>  </li> 
+<%}) %>
