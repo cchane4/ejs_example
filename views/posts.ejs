@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="/app.css"> 
+<% include partials/header %> 
+
+<link rel="stylesheet"  href="/app.css"> 
 <h1> The posts page</h1>
 <!-- you can use a for loop 
 <% for(let i = 0; i < posts_a.length; i++){ %>
@@ -9,3 +11,5 @@
 <% posts_a.forEach((posts_a) => { %>
  <li> <%= posts_a.title %> - <strong><%= posts_a.author %></strong>  </li> 
 <%}) %>
+
+<% include partials/footer %> 
